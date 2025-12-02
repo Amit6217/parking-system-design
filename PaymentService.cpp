@@ -1,10 +1,13 @@
 #include "PaymentService.h"
 #include <iostream>
 
+using namespace std;
+
 bool PaymentService::process(double amount) {
-    std::cout << "Processing payment of Rs. " << amount << "...\n";
-    std::cout << "Payment successful.\n";
+    cout << "Processing payment of Rs. " << amount << "...\n";
+    cout << "Payment successful.\n";
     return true;
 }
+
 
 
