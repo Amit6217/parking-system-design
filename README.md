@@ -42,23 +42,8 @@ It demonstrates:
 Open **PowerShell** in the project folder (for example `C:\Users\...\ooad`) and run a **single command line**:
 
 ```bash
-g++ -std=c++17 main.cpp Vehicle.cpp ParkingSlot.cpp ParkingFloor.cpp ParkingLot.cpp ^
-  PricingStrategy.cpp PaymentService.cpp Booking.cpp ParkingSystem.cpp -o ParkingSystem.exe
-```
-
-> **Note:** The `^` at the end of the first line is the PowerShell line continuation character.  
-> If you prefer, you can also put everything on **one line**:
-
-```bash
 g++ -std=c++17 main.cpp Vehicle.cpp ParkingSlot.cpp ParkingFloor.cpp ParkingLot.cpp PricingStrategy.cpp PaymentService.cpp Booking.cpp ParkingSystem.cpp -o ParkingSystem.exe
 ```
-
-If you saw an error like:
-
-> `PricingStrategy.cpp : The term 'PricingStrategy.cpp' is not recognized as the name of a cmdlet...`
-
-it usually means that PowerShell tried to run `PricingStrategy.cpp` as a **separate command** instead of passing it as an argument to `g++`.  
-Make sure all `.cpp` filenames are on the **same g++ command**, or correctly continued with `^`.
 
 To run the program:
 
