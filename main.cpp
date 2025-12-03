@@ -5,9 +5,8 @@
 using namespace std;
 
 int main() {
-    // Choose pricing strategy: hourly or flat
     unique_ptr<PricingStrategy> strategy =
-        make_unique<HourlyPricingStrategy>(50.0, 20.0); // Rs/hr
+        make_unique<HourlyPricingStrategy>(50.0, 20.0);
 
     ParkingSystem system(move(strategy));
 

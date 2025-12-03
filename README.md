@@ -6,8 +6,9 @@ It demonstrates:
 - **Use-Case Modeling**
 - **Class Design**
 - **Sequence Diagrams**
-- **SOLID principles, coupling/cohesion**
-- **Design Pattern**: Strategy (for pricing calculation)
+- **SOLID principles**
+- **GRASP principles**
+- **Design Pattern**
 
 ---
 
@@ -42,7 +43,7 @@ It demonstrates:
 Open **PowerShell** in the project folder (for example `C:\Users\...\ooad`) and run a **single command line**:
 
 ```bash
-g++ -std=c++17 main.cpp Vehicle.cpp ParkingSlot.cpp ParkingFloor.cpp ParkingLot.cpp PricingStrategy.cpp PaymentService.cpp Booking.cpp ParkingSystem.cpp -o ParkingSystem.exe
+g++ main.cpp Vehicle.cpp ParkingSlot.cpp ParkingFloor.cpp ParkingLot.cpp PricingStrategy.cpp PaymentService.cpp Booking.cpp ParkingSystem.cpp -o ParkingSystem.exe
 ```
 
 To run the program:
@@ -93,6 +94,5 @@ This allows you to change the pricing algorithm **without modifying** the rest o
      - System calculates duration and charge, processes payment, and frees the slot.
    - `3` – Exit program.
 
-You can take **screenshots** of these steps as proof of a working demo for your OOAD submission.
 
 
